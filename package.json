@@ -1,0 +1,19 @@
+{
+  "name": "nft-preview-card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ax-cd/nft-preview-card-challenge.git"
+  },
+  "author": "Ax-cd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ax-cd/nft-preview-card-challenge/issues"
+  },
+  "homepage": "https://github.com/Ax-cd/nft-preview-card-challenge#readme"
+}

@@ -1,17 +1,31 @@
+// # Front-end Style Guide
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px * 667
+// - Desktop: 1440px * 900
+
+
 // @import "./utils/variables";
-// @import "./base/typography";
-// font-family: 'Outfit', sans-serif;
+@import "./base/typography";
+    // font-family: 'Outfit', sans-serif;
+    // font-weights : 300, 400, 600
 
 // Variables
 $color-bg: hsl(217, 54%, 11%);
 $color-card-bg: hsl(216, 50%, 16%);
-
-
+$color-white: hsl(0, 0%, 100%);
+$color-txt: hsl(215, 51%, 70%);
+$color-cyan: hsl(178, 100%, 50%);
+$color-line: hsl(215, 32%, 27%);
 
 
 // Mixins
 @mixin card {
     background-color: $color-card-bg;
+
 }
 
 html {
@@ -19,9 +33,66 @@ html {
 }
 
 body {
-    background-color: red;
+    background-color: $color-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
 }
 
+
+.hidden {
+    // border: 2px solid yellow;
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin-left: -1px;
+}
+
+
 .card {
+    border: 2px solid red;
     @include card;
+    max-width: 90%;
+    height: 40%;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.img {
+    &__img-equilibrium {
+        width: 90%;
+        height: auto;
+        border-radius: 5px;
+    }
+    &__img-caption {
+        color: $color-white;
+        // font-size: ; Voir échelle de 8
+        font-weight: 600;
+    }
+}
+
+// font-size p = 18px
+p {
+    color: $color-txt;
+    font-size: 1.2rem;
+}
+
+.description {
+    border: 2px solid green;
+}
+
+.linebreak {
+    display: block;
+}
+
+.credits {
+    border: 2px solid pink;
+    &__img {
+        width: 20%;
+        height: auto;
+    }
 }

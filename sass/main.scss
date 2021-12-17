@@ -1,0 +1,27 @@
+// @import "./utils/variables";
+// @import "./base/typography";
+// font-family: 'Outfit', sans-serif;
+
+// Variables
+$color-bg: hsl(217, 54%, 11%);
+$color-card-bg: hsl(216, 50%, 16%);
+
+
+
+
+// Mixins
+@mixin card {
+    background-color: $color-card-bg;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: red;
+}
+
+.card {
+    @include card;
+}

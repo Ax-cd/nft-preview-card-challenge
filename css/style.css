@@ -13,52 +13,81 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
-.hidden {
-  position: absolute;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  margin-left: -1px;
-}
-
 .card {
-  border: 2px solid red;
   background-color: #14253d;
   max-width: 90%;
   height: 40%;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  box-shadow: #0d192b;
+}
+.card .div-img {
+  max-width: 95%;
+  position: relative;
 }
 
-.img__img-equilibrium {
-  width: 90%;
-  height: auto;
+.div-img__img-equilibrium {
+  width: 30rem;
   border-radius: 5px;
+  margin-left: -3rem;
 }
-.img__img-caption {
-  color: white;
-  font-weight: 600;
+.div-img__img-equilibrium:hover {
+  background: url(images/icon-view.svg);
 }
 
 p {
   color: #8bacda;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #00fff7;
+  cursor: pointer;
 }
 
 .description {
-  border: 2px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 0 0.5rem;
+  line-height: 1.2;
 }
-
-.linebreak {
-  display: block;
+.description__title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.description__item1 {
+  font-weight: 300;
+  padding: 0.2rem;
+  margin: 0;
+}
+.description__item2 {
+  font-weight: 600;
+  color: #00fff7;
 }
 
 .credits {
-  border: 2px solid pink;
+  border-top: 1px solid #2f415b;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 0.5rem;
+  margin: 1rem;
 }
 .credits__img {
-  width: 20%;
-  height: auto;
+  max-width: 3em;
+  max-height: 3em;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

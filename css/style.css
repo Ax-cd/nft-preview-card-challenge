@@ -23,17 +23,31 @@ body {
   box-shadow: #0d192b;
 }
 .card .div-img {
-  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30em;
   position: relative;
+}
+.card .div-img:hover .overlay {
+  opacity: 1;
 }
 
 .div-img__img-equilibrium {
-  width: 30rem;
+  display: block;
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
-  margin-left: -3rem;
+  opacity: 1;
 }
-.div-img__img-equilibrium:hover {
-  background: url(images/icon-view.svg);
+.div-img .overlay {
+  position: absolute;
+  background-image: url(../images/icon-view.svg) no-repeat;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: 400ms ease;
 }
 
 p {
@@ -72,6 +86,9 @@ a:hover {
 .description__item2 {
   font-weight: 600;
   color: #00fff7;
+}
+.description__item2 + img {
+  align-self: center;
 }
 
 .credits {

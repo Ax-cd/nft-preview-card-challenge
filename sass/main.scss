@@ -54,21 +54,35 @@ body {
     box-shadow: $color-bg;
     .div-img {
         // border: 2px solid yellow;
-        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30em;
         position: relative;
-        // margin-left: -2rem;
+        &:hover .overlay {
+            opacity: 1;
+        }
     }
 }
 
 .div-img {
     &__img-equilibrium {
-        // max-width: inherit;
-        width: 30rem;
+        display: block;
+        max-width: 100%;
+        height: auto;
         border-radius: 5px;
-        margin-left: -3rem;
-        &:hover {
-            background: url(images/icon-view.svg);
-        }
+        opacity: 1;
+        // backface-visibility: hidden;
+    }
+    .overlay {
+        position: absolute;
+        background-image: url(../images/icon-view.svg) no-repeat;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transition: 400ms ease;
+        // transform: translate(-50%, -50%);
     }
 }
 
@@ -105,15 +119,17 @@ a {
         font-weight: 300;
         padding: 0.2rem;
         margin: 0;
+
     }
+    // icons using :before?
     &__item2 {
         // border: 2px solid lawngreen;
         font-weight: 600;
         color: $color-cyan;
         // width: fit-content;
-        // &+img {
-        //     justify-content: baseline;
-        // }
+        &+img {
+            align-self: center;
+        }
     }
 }
 

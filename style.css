@@ -42,7 +42,8 @@ a:hover {
     width: 30em;
     position: relative;
 }
-.card-img:hover .overlay {
+/* fix overlay */
+.card .card-img:hover .overlay {
     opacity: 1;
 }
 .img-equilibrium {

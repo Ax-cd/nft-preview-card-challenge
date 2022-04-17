@@ -21,7 +21,7 @@ body {
     background-color: hsl(215, 51%, 16%);
     max-width: 33.8rem;
     height: 40%;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 2rem 0.5rem;
     margin: 1rem;
     box-shadow: 0 20px 25px hsl(215, 58%, 6%);
@@ -87,7 +87,11 @@ p {
     font-weight: 600;
     margin: 1rem 0;
 }
-/* align icons */
+.icon {
+    float: left;
+    padding-right: 0.6rem;
+    padding-top: 0.2rem;
+}
 .item1 {
     font-weight: 300;
     padding: 0.2rem;
